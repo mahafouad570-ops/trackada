@@ -31,4 +31,15 @@ import { totalmem } from "os";
     }
      console.log(`${icone} ${pourcentage}% des projets sont initialisés correctement (${ok}/${total})`);
    };
+
+   export const afficherBloc = (projet) =>{
+    afficherStatut(projet.nom, projet.ok);
+    afficherErreurs(projet.erreurs);
+   }
+//    const projetTest = {
+//     nom: "adalgo",
+//     ok: false,
+//     erreurs:["Le repository git n'est pas initialisé", "il manque exo-1 et exo-2"]
+//    };
+//    afficherBloc(projetTest);
   
